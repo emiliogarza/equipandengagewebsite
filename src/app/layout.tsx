@@ -7,7 +7,7 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - Equip and Engage Ministries',
-    default: 'Equip and Engage Ministries | advancement of missions work around the world',
+    default: 'Equip and Engage Ministries | Advancing missions work around the world',
   },
 }
 

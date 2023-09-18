@@ -58,11 +58,9 @@ function DribbbleIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const socialMediaProfiles = [
-  { title: 'Facebook', href: 'https://facebook.com', icon: FacebookIcon },
-  { title: 'Instagram', href: 'https://instagram.com', icon: InstagramIcon },
-  { title: 'Twitter', href: 'https://twitter.com', icon: TwitterIcon },
-  { title: 'GitHub', href: 'https://github.com', icon: GitHubIcon },
-  { title: 'Dribbble', href: 'https://dribbble.com', icon: DribbbleIcon },
+  { title: 'Facebook', href: 'https://www.facebook.com/equipengage', icon: FacebookIcon },
+  { title: 'Instagram', href: 'https://www.instagram.com/equipandengageinc/', icon: InstagramIcon },
+  { title: 'Twitter', href: 'https://www.twitter.com/equipengage', icon: TwitterIcon },
 ]
 
 export function SocialMedia({
@@ -86,6 +84,7 @@ export function SocialMedia({
           <Link
             href={socialMediaProfile.href}
             aria-label={socialMediaProfile.title}
+            target='_blank'
             className={clsx(
               'transition',
               invert ? 'hover:text-neutral-200' : 'hover:text-neutral-700',

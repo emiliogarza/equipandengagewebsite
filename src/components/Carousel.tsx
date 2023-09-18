@@ -41,7 +41,7 @@ export function Carousel() {
                 newIndex = 0
             }
             setCurrentIndex(newIndex)
-        }, 3500);
+        }, 5000);
         return () => clearInterval(interval);
       }, []);
 

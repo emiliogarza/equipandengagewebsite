@@ -9,11 +9,22 @@ const navigation = [
   {
     title: 'Equip and Engage',
     links: [
-      { title: 'About', href: '/work/family-fund' },
-      { title: 'Beyond 2024', href: '/work/unseal' },
-      { title: 'Partner', href: '/work/phobia' },
-      { title: 'Contact', href: '/work/phobia' },
+      { title: 'FamilyFund', href: '/work/family-fund' },
+      { title: 'Unseal', href: '/work/unseal' },
+      { title: 'Phobia', href: '/work/phobia' },
+      {
+        title: (
+          <>
+            See all <span aria-hidden="true">&rarr;</span>
+          </>
+        ),
+        href: '/work',
+      },
     ],
+  },
+  {
+    title: 'Connect',
+    links: socialMediaProfiles,
   },
 ]
 
