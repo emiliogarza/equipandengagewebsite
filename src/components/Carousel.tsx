@@ -6,6 +6,7 @@ import Image from 'next/image'
 import carouselSlide1 from '@/images/homepage-slides/Slide-1.jpg'
 import carouselSlide2 from '@/images/homepage-slides/Slide-2.jpg'
 import carouselSlide3 from '@/images/homepage-slides/Slide-3.jpg'
+import Link from 'next/link'
 
 interface CarouselImage {
     source: StaticImageData | string;
@@ -18,17 +19,17 @@ export function Carousel() {
     {
         source: carouselSlide1,
         altText: "Equip and Engage Ministries",
-        link: "/about-us"
+        link: "/about"
     },
     {
         source: carouselSlide2,
         altText: "Beyond Initiative",
-        link: "/about-us"
+        link: "/beyond"
     },
     {
         source: carouselSlide3,
         altText: "Partner with the mission of Equip and Engage Ministries",
-        link: "/about-us"
+        link: "/partner"
     }]
     const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -46,7 +47,9 @@ export function Carousel() {
       }, []);
 
     return (
-        <Image src={slides[currentIndex].source} alt={slides[currentIndex].altText} className="rounded-3xl cursor-pointer" />
+        <Link href={slides[currentIndex].link} >
+            <Image src={slides[currentIndex].source} alt={slides[currentIndex].altText} className="rounded-3xl cursor-pointer" />
+        </Link>
     )
 }
 

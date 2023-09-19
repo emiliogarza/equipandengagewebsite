@@ -56,7 +56,7 @@ function ContactForm() {
     <FadeIn className="lg:order-last">
       <form>
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Inquiries
+          Inquiries or Become a Sponsor
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
           <TextInput label="Name" name="name" autoComplete="name" />
@@ -73,17 +73,17 @@ function ContactForm() {
           />
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
           <TextInput label="Message" name="message" />
-          {/* <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
+          <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
-              <legend className="text-base/6 text-neutral-500">Budget</legend>
+              <legend className="text-base/6 text-neutral-500">Interested in becoming a sponsor?</legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="$25K – $50K" name="budget" value="25" />
-                <RadioInput label="$50K – $100K" name="budget" value="50" />
-                <RadioInput label="$100K – $150K" name="budget" value="100" />
-                <RadioInput label="More than $150K" name="budget" value="150" />
+                <RadioInput label="Church Sponsor" name="sponsor" value="25" />
+                <RadioInput label="Individual Sponsor" name="sponsor" value="50" />
+                <RadioInput label="Corporate Sponsor" name="sponsor" value="100" />
+                <RadioInput label="Song Sponsor" name="sponsor" value="150" />
               </div>
             </fieldset>
-          </div> */}
+          </div>
         </div> 
         <Button type="submit" className="mt-10">
           Submit
@@ -139,10 +139,9 @@ export default function Contact() {
   return (
     <>
       <PageIntro eyebrow="" title="Contact us">
-        <p>We would love to hear from you.</p>
       </PageIntro>
 
-      <Container className="mt-24 sm:mt-32 lg:mt-12">
+      <Container className="mt-12">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
           <ContactForm />
           <ContactDetails />
