@@ -28,30 +28,32 @@ import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
 import imageMichaelFoster from '@/images/team/michael-foster.jpg'
 import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
 import { loadArticles } from '@/lib/mdx'
+import { Accordion } from '@/components/Accordion'
 
 
-function TheNeed() {
+function IntroDetails() {
   return (
-    <div className={'relative pt-24 sm:pt-32 lg:pt-24'}>
+    <div className={'relative pt-6'}>
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
         <GridPattern
           className="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
           yOffset={-270}
         />
       </div>
+      <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <Accordion title="Objective">
+          <p className="text-base leading-7 text-gray-600">We will be going BEYOND and traveling to Sydney, Australia, April 29 through May 8, 2024, to fulfill our mission statement by conducting a <strong>FREE</strong>, multi-day training event for those from surrounding cities, regions, and countries who desire to learn, advance, and progress BEYOND in their God-called ministry. By partnering with the amazing team in Sydney, and coming alongside their tremendous staff, we will be able to reach BEYOND and into the international church to help equip and engage the nations.</p> 
+          <p className="text-base leading-7 text-gray-600">Participants must receive their pastor&apos;s approval to attend and upon arrival will receive useable material for church-teams, links to recorded instructional seminar videos, and specific resource handouts. Along with this training, we will produce a live, two-day recording at The Pentecostals of Sydney comprised of newly written material. It will include local singers and musicians from surrounding churches and areas in Australia and other nations. It will conclude on Sunday with a crusade-style service taking place at the church with the intent of reaching new souls.</p>
+      </Accordion>
 
-      <SectionIntro title='Objective'>
-        <p>We will be going BEYOND and traveling to Sydney, Australia, April 29 through May 8, 2024, to fulfill our mission statement by conducting a <strong>FREE</strong>, multi-day training event for those from surrounding cities, regions, and countries who desire to learn, advance, and progress BEYOND in their God-called ministry. By partnering with the amazing team in Sydney, and coming alongside their tremendous staff, we will be able to reach BEYOND and into the international church to help equip and engage the nations.</p> 
-        <p>Participants must receive their pastor&apos;s approval to attend and upon arrival will receive useable material for church-teams, links to recorded instructional seminar videos, and specific resource handouts. Along with this training, we will produce a live, two-day recording at The Pentecostals of Sydney comprised of newly written material. It will include local singers and musicians from surrounding churches and areas in Australia and other nations. It will conclude on Sunday with a crusade-style service taking place at the church with the intent of reaching new souls.</p>
-      </SectionIntro>
-
-      <SectionIntro title='The Need' className='mt-10'>
+      <Accordion title='The Need'>
         <p>The need for material, practical training, one-on one interaction, and teaching is great. As this type of initiative would be the first of its kind in this area, it will help bring additional dynamic kingdom-tools to churches and regions. Those who attend would be able to obtain useable resources, receive recorded video sessions of the training, and glean from classes and team building initiatives that would help strengthen the local church and its leaders for years to come. They will also be able to be a part of a live recording and see the inner workings of the team. No one will be able to attend without the permission of their pastor. Each member of the selected team has a burden to further the gospel and will offer practical instruction in their field of expertise.</p> 
-      </SectionIntro>
+      </Accordion>
 
-      <SectionIntro title='Why Sydney?' className='mt-10'>
+      <Accordion title='Why Sydney?'>
         <p>In our desire to go BEYOND and have a kingdom-impact within a specific window of time, Sydney is ideal because it is a center location that is easily accessible for many surrounding countries in the Pacific Region. This would be a first-of-its-kind event for many places and would allow room for potential growth and a lasting impact in the future. It is also home to the largest airport in all of Australia and an easy access-point to those who would desire to come and be a part of this multi-day event. The Pentecostals of Sydney provides a tremendous facility to execute a training/live recording and will allow room for multiple breakout sessions and classes.</p> 
-      </SectionIntro>
+      </Accordion>
+      </Container>
     </div>
   )
 }
@@ -308,7 +310,7 @@ function Sponsorship() {
             <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
               <FadeIn>
                 <h2 className="font-display text-2xl font-semibold text-neutral-950">
-                  Sponorship
+                  Sponsorship
                 </h2>
               </FadeIn>
               <div className="lg:col-span-3">
@@ -391,7 +393,7 @@ export default async function Beyond() {
 
     <Mission />
 
-    <TheNeed />
+    <IntroDetails />
 
     <Instructors />
 
