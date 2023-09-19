@@ -56,7 +56,7 @@ function ContactForm() {
     <FadeIn className="lg:order-last">
       <form>
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Work inquiries
+          Inquiries
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
           <TextInput label="Name" name="name" autoComplete="name" />
@@ -73,7 +73,7 @@ function ContactForm() {
           />
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
           <TextInput label="Message" name="message" />
-          <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
+          {/* <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
               <legend className="text-base/6 text-neutral-500">Budget</legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
@@ -83,10 +83,10 @@ function ContactForm() {
                 <RadioInput label="More than $150K" name="budget" value="150" />
               </div>
             </fieldset>
-          </div>
-        </div>
+          </div> */}
+        </div> 
         <Button type="submit" className="mt-10">
-          Let’s work together
+          Submit
         </Button>
       </form>
     </FadeIn>
@@ -103,8 +103,7 @@ function ContactDetails() {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
+            ['Inquiries', 'equipandengage@gmail.com'],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
@@ -133,17 +132,17 @@ function ContactDetails() {
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
+  description: 'We would love to hear from you.',
 }
 
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
-        <p>We can’t wait to hear from you.</p>
+      <PageIntro eyebrow="" title="Contact us">
+        <p>We would love to hear from you.</p>
       </PageIntro>
 
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <Container className="mt-24 sm:mt-32 lg:mt-12">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
           <ContactForm />
           <ContactDetails />

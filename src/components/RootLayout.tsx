@@ -76,7 +76,7 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert}>
+          <Button href="/beyond" invert={invert}>
             Beyond 2024
           </Button>
           <button
@@ -139,11 +139,11 @@ function Navigation() {
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
       <NavigationItem href="/about">About</NavigationItem>
-        <NavigationItem href="/work">Beyond Initiative</NavigationItem>
+        <NavigationItem href="/beyond">Beyond Australia 2024</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Partner</NavigationItem>
-        <NavigationItem href="/blog">Contact</NavigationItem>
+        <NavigationItem href="/partner">Partner</NavigationItem>
+        <NavigationItem href="/contact">Contact</NavigationItem>
       </NavigationRow>
     </nav>
   )

@@ -9,17 +9,10 @@ const navigation = [
   {
     title: 'Equip and Engage',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
-      {
-        title: (
-          <>
-            See all <span aria-hidden="true">&rarr;</span>
-          </>
-        ),
-        href: '/work',
-      },
+      { title: 'Beyond 2024', href: '/beyond' },
+      { title: 'Partner', href: '/give' },
+      { title: 'Contact', href: '/contact' },
+      { title: 'About', href: '/about' },
     ],
   },
   {
@@ -76,8 +69,7 @@ function NewsletterForm() {
         Sign up for our newsletter
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources and
-        inspiration.
+        Subscribe to get the latest Equip and Engage news
       </p>
       <div className="relative mt-6">
         <input
