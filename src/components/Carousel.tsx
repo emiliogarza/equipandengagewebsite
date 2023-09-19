@@ -44,7 +44,7 @@ export function Carousel() {
             setCurrentIndex(newIndex)
         }, 5000);
         return () => clearInterval(interval);
-      }, []);
+      }, [slides]);
 
     return (
         <Link href={slides[currentIndex].link} >
