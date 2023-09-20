@@ -450,7 +450,7 @@ function Accommodations() {
                 </p>
 
                 <p className="mt-12">Holiday Inn (Sydney Airport)<br />
-                Corner of O'Riordan Street, Mascot, NSW 2020 Australia
+                Corner of O&apos;Riordan Street, Mascot, NSW 2020 Australia
                 Phone: 61-2-93300600
                 (7 miles from church)
                 </p>
