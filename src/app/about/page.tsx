@@ -57,7 +57,7 @@ function Culture() {
 export const metadata: Metadata = {
   title: 'About us',
   description:
-    'Equip and Engage is a non-profit ministry corporation involved in the advancement of missions work around the world.',
+    'Equip and Engage INC. is a non-profit organization involved in the advancement of missions work around the world.',
 }
 
 export default async function About() {
@@ -67,17 +67,14 @@ export default async function About() {
     <>
       <PageIntro eyebrow="" title="About us">
         <p>
-          Equip and Engage is a non-profit ministry corporation involved in the advancement of missions work around the world.
+          Equip and Engage INC. is a non-profit organization involved in the advancement of missions work around the world.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Established by Tyler Sullivan in 2022, it is the goal of E&E to reach beyond borders and into regions and nations to engage and impact the international Apostolic Church through training and equipping.
+            Equip and Engage was founded by Rev. Tyler Sullivan, an Associate Minister in Missions with the UPCI, who has spent time ministering in over 20 countries. 
           </p>
           <p>
-            Tyler Sullivan is a licensed minister with the United Pentecostal Church as well as an Associate Minister in Missions with the Global Missions Division. He has traveled to over 20 countries and has seen God do many miraculous things.
-          </p>
-          <p>
-            By partnering with the local churches, we can reach into areas where a lasting impact can be formed, and the Great Commission of Jesus Christ can be fulfilled; to go into all the world.
+            This organization exists to assist in fulfilling the Great Commission of Jesus Christ by providing tools and resources needed to impact the International Apostolic Church. By partnering with the local church, it is our desire reach beyond borders and into nations where lasting foundations can be laid.
           </p>
         </div>
       </PageIntro>

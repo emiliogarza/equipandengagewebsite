@@ -12,7 +12,7 @@ import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { TagList, TagListItem } from '@/components/TagList'
-import homePromo3 from '@/images/home-promo-images/home-promo-3.jpg'
+import homePromo3 from '@/images/missions-photography/city.jpg'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
@@ -55,12 +55,12 @@ function Section({
   )
 }
 
-function Discover() {
+function Give() {
   return (
-    <Section title="Give" image={{ src: homePromo3 }}>
+    <Section title="Donate" image={{ src: homePromo3 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Thank you, your partnership helps further missions around the world. Tyler Sullivan is an Associated Minister in Missions with the UPCI. If you feel to partner, All funds donated are tax deductible and your church can receive global missions giving credit.
+          Thank you for donating. Your partnership helps further missions around the world. All donations are tax-deductible, and your church may receive global missions giving credit with the United Pentecostal Church International.
         </p>
         <Button href="https://tithe.ly/give_new/www/#/tithely/give-one-time/6768001" invert={false} target='_blank'>
             Give Here
@@ -225,7 +225,7 @@ export default function Process() {
   return (
     <>
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
-        <Discover />
+        <Give />
       </div>
 
     </>

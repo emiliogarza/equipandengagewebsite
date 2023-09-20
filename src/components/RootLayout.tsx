@@ -145,6 +145,9 @@ function Navigation() {
         <NavigationItem href="/partner">Partner</NavigationItem>
         <NavigationItem href="/contact">Contact</NavigationItem>
       </NavigationRow>
+      <NavigationRow>
+        <NavigationItem href="/store">Store</NavigationItem>
+      </NavigationRow>
     </nav>
   )
 }

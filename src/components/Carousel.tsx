@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react'
 import { StaticImageData } from 'next/image'
 import Image from 'next/image'
-import carouselSlide1 from '@/images/homepage-slides/Slide-1.jpg'
-import carouselSlide2 from '@/images/homepage-slides/Slide-2.jpg'
-import carouselSlide3 from '@/images/homepage-slides/Slide-3.jpg'
+import carouselSlide1 from '@/images/homepage-slides/Slide-4.jpg'
+import carouselSlide2 from '@/images/homepage-slides/Slide-5.jpg'
+import carouselSlide3 from '@/images/homepage-slides/Slide-6.jpg'
 import Link from 'next/link'
 
 interface CarouselImage {

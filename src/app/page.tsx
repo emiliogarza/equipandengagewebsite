@@ -188,7 +188,7 @@ function HomePromo() {
             Advancing missions work around the world
           </h2>
           <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-          Equip and Engage is a non-profit ministry corporation involved in the advancement of missions work around the world. 
+          Equip and Engage INC. is a non-profit organization involved in the advancement of missions work around the world.
           </p>
         </div>
         <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -264,15 +264,15 @@ function GivingPromo() {
           Equip and Engage 
         </h2>
         <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-          <a
+          <Link
             href="/partner"
             className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Give
-          </a>
-          <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
+          </Link>
+          <Link href="/about" className="text-sm font-semibold leading-6 text-gray-900">
             Learn more about equip and engage <span aria-hidden="true">→</span>
-          </a>
+          </Link>
         </div>
       </div>
       </FadeIn>
