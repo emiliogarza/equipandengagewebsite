@@ -12,7 +12,8 @@ import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { TagList, TagListItem } from '@/components/TagList'
-import homePromo3 from '@/images/missions-photography/city.jpg'
+import imageCity from '@/images/missions-photography/city.jpg'
+
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
@@ -57,7 +58,7 @@ function Section({
 
 function Give() {
   return (
-    <Section title="Donate" image={{ src: homePromo3 }}>
+    <Section title="Donate" image={{ src: imageCity }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Thank you for donating. Your partnership helps further missions around the world. All donations are tax-deductible, and your church may receive global missions giving credit with the United Pentecostal Church International.
