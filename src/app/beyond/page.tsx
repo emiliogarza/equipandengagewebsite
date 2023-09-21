@@ -14,7 +14,7 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
 import { Button } from '@/components/Button'
 import beyondPoster from '@/images/beyond/beyond-poster.jpg'
-import beyondPosterSquare from '@/images/beyond/beyond-poster-square.png'
+import beyondPosterSquare from '@/images/beyond/beyond-poster-square-sm.png'
 import beyondTeam from '@/images/beyond/beyond-team.jpg'
 import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
 import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
@@ -618,7 +618,8 @@ export default async function Beyond() {
   return (
     <>
     <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <Image src={beyondPosterSquare} alt="Beyond Initiative 2024" className='rounded-3xl mx-auto max-w-auto' />
+      <Image src={beyondPosterSquare} alt="Beyond Initiative 2024" className='rounded-3xl mx-auto max-w-auto sm:block md:hidden' />
+      <Image src={beyondPoster} alt="Beyond Initiative 2024" className='rounded-3xl mx-auto max-w-auto hidden md:block' />
     </Container>
 
     <Mission />
