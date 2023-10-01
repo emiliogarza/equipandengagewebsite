@@ -163,6 +163,10 @@ const team = [
         image: { src: imageDiGiovanniJ },
       },
       {
+        name: 'Kadee Sullivan',
+        image: { src: imageKadee },
+      },
+      {
         name: 'Patrick Orianus',
         image: { src: imageOrianus },
       },
