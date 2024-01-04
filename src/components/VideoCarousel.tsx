@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 interface VideoCarouselItem {
     ytKey: string;
     description: string;
-    msLength: number;
+    duration: number;
 }
 
 export function VideoCarousel() {
@@ -13,12 +13,12 @@ export function VideoCarousel() {
     {
         ytKey: "zuzZ_RSOb2E",
         description: "BEYOND Initiative 2024",
-        msLength: 130000
+        duration: 130000
     },
     {
         ytKey: "Ol1Lurn5BKg",
         description: "BEYOND Initiative 2024 - Tyler Sullivan",
-        msLength: 220000
+        duration: 220000
     }]
     const [currentIndex, setCurrentIndex] = useState(0)
     const [duration, setDuration] = useState(0)
