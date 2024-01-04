@@ -11,6 +11,8 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import { Carousel } from '@/components/Carousel'
+import { VideoCarousel } from '@/components/VideoCarousel'
+import { MixedCarousel } from '@/components/MixedCarousel'
 import { GridPattern } from '@/components/GridPattern'
 import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
 import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
@@ -287,7 +289,9 @@ export default async function Home() {
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn>
-          <Carousel />
+          <MixedCarousel />
+        {/* <VideoCarousel /> */}
+          {/* <Carousel /> */}
           {/* <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
             Award-winning development studio based in Denmark.
           </h1>
