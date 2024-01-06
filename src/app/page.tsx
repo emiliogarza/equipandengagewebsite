@@ -331,7 +331,7 @@ function HomeBeyondEventBriteLinks() {
         <Button className='mr-2' href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank">
           Buy Tickets
         </Button>
-        <Button href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank" invert={true}>
+        <Button href="/beyond" invert={true}>
           Learn More
         </Button>
       </div>
