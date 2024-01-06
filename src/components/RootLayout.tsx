@@ -77,7 +77,7 @@ function Header({
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/beyond" invert={invert}>
-            Beyond 2024
+            BEYOND 2024
           </Button>
           <button
             ref={toggleRef}
