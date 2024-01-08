@@ -329,7 +329,7 @@ function HomeBeyondEventBriteLinks() {
       <StyledImageSection title="BEYOND Training Initiative and Live Recording Tickets" image={{ src: carouselSlide2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <Button className='mr-2' href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank">
-          Buy Tickets
+          Get Training Initiative Tickets
         </Button>
         <Button href="/beyond" invert={true}>
           Learn More

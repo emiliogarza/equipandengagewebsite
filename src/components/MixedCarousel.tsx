@@ -19,18 +19,18 @@ interface CarouselItem {
 export function MixedCarousel() {
     const content: CarouselItem[] = [
     {
-        source: "zuzZ_RSOb2E",
-        description: "BEYOND Initiative 2024",
-        link: "",
-        duration: 130000,
-        isVideo: true
-    },
-    {
         source: carouselSlide2,
         description: "Beyond Initiative",
         link: "/beyond",
         duration: 5000,
         isVideo: false
+    },
+    {
+        source: "zuzZ_RSOb2E",
+        description: "BEYOND Initiative 2024",
+        link: "",
+        duration: 130000,
+        isVideo: true
     },
     {
         source: carouselSlide1,
