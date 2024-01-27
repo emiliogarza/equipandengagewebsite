@@ -16,18 +16,7 @@ import { Button } from '@/components/Button'
 import beyondPoster from '@/images/beyond/beyond-poster.jpg'
 import beyondPosterSquare from '@/images/beyond/beyond-poster-square-sm.png'
 import beyondTeam from '@/images/beyond/beyond-team.jpg'
-import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
-import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
-import imageBlakeReid from '@/images/team/blake-reid.jpg'
-import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
-import imageDriesVincent from '@/images/team/dries-vincent.jpg'
-import imageEmmaDorsey from '@/images/team/emma-dorsey.jpg'
-import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpg'
-import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpg'
-import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
-import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
-import imageMichaelFoster from '@/images/team/michael-foster.jpg'
-import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
+
 import imageBenitez from '@/images/team/Benitez.jpg'
 import imageBounds from '@/images/team/Bounds.jpg'
 import imageCashen from '@/images/team/Cashen.jpg'
@@ -114,26 +103,6 @@ function Mission() {
 }
 
 const team = [
-  // {
-  //   title: 'Leadership',
-  //   people: [
-  //     {
-  //       name: 'Leslie Alexander',
-  //       role: 'Co-Founder / CEO',
-  //       image: { src: imageLeslieAlexander },
-  //     },
-  //     {
-  //       name: 'Michael Foster',
-  //       role: 'Co-Founder / CTO',
-  //       image: { src: imageMichaelFoster },
-  //     },
-  //     {
-  //       name: 'Dries Vincent',
-  //       role: 'Partner & Business Relations',
-  //       image: { src: imageDriesVincent },
-  //     },
-  //   ],
-  // },
   {
     title: 'BEYOND Team',
     people: [
@@ -370,9 +339,8 @@ function Tickets() {
                 </h2>
               </FadeIn>
               <div className="lg:col-span-3">
-                <p>Training Initiative tickets go live on <strong>January 8, 2024</strong></p>
                 <Button href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank">
-                  Get Training Initiative Tickets Now
+                  Get FREE Training Initiative Tickets Now
                 </Button>
                 <p className="mt-12">Live Recording tickets go live on <strong>February 8, 2024</strong>.</p>
               </div>
@@ -396,7 +364,10 @@ function Volunteer() {
                 </h2>
               </FadeIn>
               <div className="lg:col-span-3">
-                <p>More information on how to volunteer coming soon!</p>
+                <p>If you are interested in becoming a volunteer for the BEYOND 2024 event, please fill out the below form to receive consideration for a volunteer position.</p>
+                <Button href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAa6an7tUNlhNQUhWT0tNQVlBN1RFR09WVkVYUzJGVS4u&origin=lprLink" target="_blank">
+                  Volunteer Application
+                </Button>
               </div>
             </div>
           </FadeInStagger>
