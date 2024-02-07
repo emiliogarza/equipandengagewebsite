@@ -76,9 +76,12 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/beyond" invert={invert}>
+          <Button href="/beyond" invert={true} className="hidden lg:block">
             BEYOND 2024
           </Button>
+          <Button className='mr-2' href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank">
+          Live Recording Tickets
+        </Button>
           <button
             ref={toggleRef}
             type="button"
