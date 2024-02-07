@@ -44,6 +44,7 @@ export enum BgColorOption {
 export interface CmsLink {
     text: string;
     link: string;
+    target: string;
 }
 
 

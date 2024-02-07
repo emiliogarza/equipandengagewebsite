@@ -1,7 +1,4 @@
-import { BaseContentComponent, BlockContent, PageIntroContent, TextContentSection } from "@/models/contentModels"
-import { PageIntro } from "./PageIntro"
-import { title } from "process";
-import { content } from "tailwindcss/defaultTheme";
+import { PageIntroContent, TextContentSection } from "@/models/contentModels"
 import { PageIntroContentComponent } from "./PageIntoContent";
 import { SectionWithGridList } from "./SectionWithGridList";
 

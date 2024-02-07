@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 
 import { client } from '../../../sanity/lib/client'
-import { BaseContentComponent, Page, PageIntroContent } from '@/models/contentModels'
+import { Page } from '@/models/contentModels'
 import { CmsComponent } from '@/components/CmsComponent'
 
 export const metadata: Metadata = {

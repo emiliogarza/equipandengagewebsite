@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "./Container";
 import { GridList, GridListItem } from "./GridList";
 import { SectionIntro } from "./SectionIntro";
+import { CmsLink } from "./CmsLink";
 
 
 export function SectionWithGridList({
@@ -36,7 +37,7 @@ export function SectionWithGridList({
                     <GridList>
                         {contentList?.map((contentListItem: ContentListItem, index) => (
                             <GridListItem title={contentListItem.title} invert key={index}>
-                                {contentListItem.text}
+                                {contentListItem.text} <CmsLink link={contentListItem.link} classNames="underline" />
                             </GridListItem>
                         ))}
                     </GridList>

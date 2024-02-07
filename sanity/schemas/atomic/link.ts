@@ -9,12 +9,28 @@ export const cmsLink = defineType({
         defineField({
             title: 'Display Text',
             name: 'text',
-            type: 'string'
+            type: 'string',
+            validation: (Rule) => Rule.required()
         }),
         defineField({
             title: 'Link',
             name: 'link',
-            type: 'url'
+            type: 'url',
+            validation: (Rule) => Rule.required()
+        }),
+        defineField({
+            title: 'Target',
+            name: 'target',
+            type: 'string',
+            options: {
+                list: [
+                    {title: 'None', value: ''},
+                    {title: 'New Window', value: '_blank'},
+                    {title: 'Self', value: '_self'},
+                    {title: 'Parent', value: '_parent'},
+                    {title: 'Top', value: '_top'}
+                ],
+            }
         })
     ]
 });
