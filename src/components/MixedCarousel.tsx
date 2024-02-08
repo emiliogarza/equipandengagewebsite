@@ -6,6 +6,7 @@ import Image from 'next/image'
 import carouselSlide1 from '@/images/homepage-slides/Slide-7.jpg'
 import carouselSlide2 from '@/images/homepage-slides/Slide-8.jpg'
 import carouselSlide3 from '@/images/homepage-slides/Slide-9.jpg'
+import carouselSlide4 from '@/images/homepage-slides/live-recording-image-sm.jpg'
 import Link from 'next/link'
 
 interface CarouselItem {
@@ -14,15 +15,24 @@ interface CarouselItem {
     link: string;
     duration: number;
     isVideo: boolean;
+    target?: string;
 }
 
 export function MixedCarousel() {
     const content: CarouselItem[] = [
     {
+        source: carouselSlide4,
+        description: "BEYOND Tickets",
+        link: "https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator",
+        duration: 10000,
+        isVideo: false,
+        target: '_blank'
+    },        
+    {
         source: carouselSlide2,
         description: "Beyond Initiative",
         link: "/beyond",
-        duration: 5000,
+        duration: 10000,
         isVideo: false
     },
     {
@@ -77,7 +87,7 @@ export function MixedCarousel() {
                     <iframe src={'https://www.youtube.com/embed/' + content[currentIndex].source + '?autoplay=1&mute=1&modestBranding=1&rel=0'} className="absolute inset-0 w-full h-full rounded-3xl"></iframe>
                 </div>
             ) : (
-                <Link href={content[currentIndex].link} >
+                <Link href={content[currentIndex].link} target={content[currentIndex].target ? content[currentIndex].target : undefined}>
                     <Image src={content[currentIndex].source} alt={content[currentIndex].description} className="rounded-3xl cursor-pointer w-full" />
                 </Link>
             )}
