@@ -339,10 +339,12 @@ function Tickets() {
                 </h2>
               </FadeIn>
               <div className="lg:col-span-3">
-                <Button href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank">
+                <Button className="mr-2" href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank">
                   Get FREE Training Initiative Tickets Now
                 </Button>
-                <p className="mt-12">Live Recording tickets go live on <strong>February 8, 2024</strong>.</p>
+                <Button href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank">
+                  Buy Live Recording Tickets
+                </Button>
               </div>
             </div>
           </FadeInStagger>
