@@ -1,6 +1,7 @@
-import { PageIntroContent, TextContentSection } from "@/models/contentModels"
+import { PageIntroContent, StyledImageSection, TextContentSection } from "@/models/contentModels"
 import { PageIntroContentComponent } from "./PageIntoContent";
 import { SectionWithGridList } from "./SectionWithGridList";
+import { CmsStyledImageSection } from "./CmsStyledImageSection";
 
 
 export function CmsComponent({
@@ -29,6 +30,15 @@ export function CmsComponent({
                 subTitle={componentContent.subTitle}
                 content={componentContent.content}
                 contentList={componentContent.contentList} />
+        )
+    }  else if (type === "styledImageSection") {
+        let componentContent: StyledImageSection = cmsComponent;
+        return (
+            <CmsStyledImageSection 
+                title={componentContent.title}
+                cmsImage={componentContent.image}
+                content={componentContent.content}
+                buttons={componentContent.buttons} />
         )
     }
 }

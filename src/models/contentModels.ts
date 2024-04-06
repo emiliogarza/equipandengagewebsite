@@ -1,3 +1,5 @@
+import type { Image } from 'sanity'
+
 export interface Page {
     _type: string;
     title: string;
@@ -5,7 +7,7 @@ export interface Page {
         _type: string;
         current: string;
     };
-    pageContent: (PageIntroContent | TextContentSection)[];
+    pageContent: (BaseContentComponent)[];
 }
 
 export interface BaseContentComponent {
@@ -25,6 +27,12 @@ export interface TextContentSection extends BaseContentComponent {
     bgcolor: BgColorOption;
     content: BlockContent[];
     contentList: ContentListItem[];
+}
+
+export interface StyledImageSection extends BaseContentComponent {
+    image: CmsImage;
+    buttons: CmsButton[];
+    content: BlockContent[];
 }
 
 export interface ContentListItem {
@@ -47,6 +55,17 @@ export interface CmsLink {
     target: string;
 }
 
+export interface CmsButton {
+    text: string;
+    link: string;
+    target?: string;
+    invertedColor: boolean;
+}
+
+export interface CmsImage {
+    _type: string;
+    image: Image;
+}
 
 export interface BlockContent {
     _type: string;

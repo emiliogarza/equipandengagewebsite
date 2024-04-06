@@ -4,6 +4,9 @@ import { page } from './schemas/page'
 import { contentListItem } from './schemas/contentListItem'
 import { pageIntro } from './schemas/pageIntro'
 import { cmsLink } from './schemas/atomic/link'
+import { cmsButton } from './schemas/atomic/button'
+import { styledImageSection } from './schemas/styledImageSection'
+import { cmsImage } from './schemas/atomic/image'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -11,6 +14,9 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     page,
     contentListItem,
     pageIntro,
-    cmsLink
+    cmsLink,
+    cmsButton,
+    cmsImage,
+    styledImageSection
   ],
 }

@@ -10,6 +10,11 @@ To get started with this template, first install the npm dependencies:
 npm install
 ```
 
+Also this is now a Sanity project, so you need to export the Sanity Project ID like this
+```bash
+export NEXT_PUBLIC_SANITY_PROJECT_ID=X
+```
+
 Next, run the development server:
 
 ```bash

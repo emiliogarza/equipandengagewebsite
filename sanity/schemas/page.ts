@@ -28,7 +28,8 @@ export const page = defineType({
                 type: 'reference',
                 to: [
                     { type: 'pageIntro' },
-                    { type: 'textContent' }
+                    { type: 'textContent' },
+                    { type: 'styledImageSection' }
                 ],
               },
             ]

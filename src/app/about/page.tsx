@@ -16,15 +16,7 @@ async function getAboutUsData() {
     title,
     slug,
     _type,
-    pageContent[]->{
-      _type,  
-      eyebrow, 
-      title, 
-      subTitle,
-      content,
-      bgcolor,
-      contentList[]
-    }    
+    pageContent[]->
   }
   `;
   const data = await client.fetch(query);
