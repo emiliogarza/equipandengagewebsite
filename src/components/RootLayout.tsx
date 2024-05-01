@@ -79,8 +79,8 @@ function Header({
           <Button href="/beyond" invert={true} className="hidden lg:block">
             BEYOND 2024
           </Button>
-          <Button className='mr-2' href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank">
-          Live Recording Tickets
+          <Button className='mr-2' href="https://brushfire.com/equipandengage/beyondsydney/576447/details" target="_blank">
+          Live Stream Access
         </Button>
           <button
             ref={toggleRef}
@@ -142,7 +142,7 @@ function Navigation() {
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
       <NavigationItem href="/about">About</NavigationItem>
-        <NavigationItem href="/beyond">Beyond Australia 2024</NavigationItem>
+        <NavigationItem href="/beyond">BEYOND Australia 2024</NavigationItem>
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/partner">Partner</NavigationItem>

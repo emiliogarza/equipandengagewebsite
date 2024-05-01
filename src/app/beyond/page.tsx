@@ -52,6 +52,25 @@ function IntroDetails() {
         />
       </div>
       <Container className="mt-24">
+
+      <Accordion title='Access to Live Stream'>
+      <div className="space-y-24">
+          <FadeInStagger>
+            <Border as={FadeIn} />
+            <div className="grid grid-cols-1 gap-6 pt-12">
+              <FadeIn>
+              <div>
+                <p>Join us online for this incredible time of worship during this portion of the BEYOND initiative. Access to the stream will cost $35 to watch live from the Pentecostals of Sydney on Saturday, May 4, 2024 7:30 PM AEST</p>
+                <Button className="mr-2 mt-12" href="https://brushfire.com/equipandengage/beyondsydney/576447/details" target="_blank">
+                  Get Live Stream Access
+                </Button>
+              </div>
+
+              </FadeIn>
+            </div>
+          </FadeInStagger>
+      </div>
+    </Accordion>
       <Accordion title="Objective">
           <p className="text-base leading-7 text-gray-600">We will be going BEYOND and traveling to Sydney, Australia, April 29 through May 8, 2024, to fulfill our mission statement by conducting a <strong>FREE</strong>, multi-day training event for those from surrounding cities, regions, and countries who desire to learn, advance, and progress BEYOND in their God-called ministry. By partnering with the amazing team in Sydney, and coming alongside their tremendous staff, we will be able to reach BEYOND and into the international church to help equip and engage the nations.</p> 
           <p className="text-base leading-7 text-gray-600 mt-6">Participants must receive their pastor&apos;s approval to attend and upon arrival will receive useable material for church teams, links to recorded instructional seminar videos, and specific resource handouts. Along with this training, we will produce a live, two-day recording at The Pentecostals of Sydney comprised of newly written material. It is also our goal to supply churches with needed equipment and resources. The initiative will conclude on Sunday with services taking place with the intent of reaching new souls.</p>
@@ -65,7 +84,11 @@ function IntroDetails() {
           </h2>
           <p className="text-base leading-7 text-gray-600">In our desire to go BEYOND and have a kingdom-impact within a specific window of time, we chose Sydney because it is a center location that is easily accessible for many surrounding countries in the Pacific Region such as New Zealand, Fiji, Vanuatu, Tonga, and Samoa. This initiative would provide an open door for many from these countries to attend and would allow room for potential growth and a lasting impact for the future. It is also home to the largest airport in all of Australia and an easy access point to those who would desire to come and be a part of this multi-day event. The Pentecostals of Sydney provides a tremendous facility to execute a training/live recording and will allow room for multiple breakout sessions and classes.</p> 
       </Accordion>
+
+      
       </Container>
+
+      
     </div>
   )
 }
@@ -339,6 +362,9 @@ function Tickets() {
                 </h2>
               </FadeIn>
               <div className="lg:col-span-3">
+                <Button className="mr-2" href="https://brushfire.com/equipandengage/beyondsydney/576447/details" target="_blank">
+                  Get Live Stream Access
+                </Button>
                 <Button className="mr-2" href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank">
                   Get FREE Training Initiative Tickets Now
                 </Button>
@@ -602,8 +628,6 @@ export default async function Beyond() {
       <Image src={beyondPoster} alt="Beyond Initiative 2024" className='rounded-3xl mx-auto max-w-auto hidden md:block' />
     </Container>
 
-    <Mission />
-
     <IntroDetails />
 
     <Container>
@@ -641,6 +665,8 @@ export default async function Beyond() {
     <Container>
       <Resources />
     </Container>
+
+    <Mission />
 
     </>
   )

@@ -328,11 +328,11 @@ function HomeBeyondEventBriteLinks() {
     <Container className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
       <StyledImageSection title="BEYOND Training Initiative and Live Recording Tickets" image={{ src: carouselSlide2 }}>
       <div className="space-y-6 text-base text-neutral-600">
-      <Button className='mr-2' href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank">
-          Buy Live Recording Tickets!
+      <Button className='mr-2' href="https://brushfire.com/equipandengage/beyondsydney/576447/details" target="_blank">
+          Access to Live Stream
         </Button>
         <Button className='mr-2' href="https://www.eventbrite.com/e/beyond-training-initiative-live-recording-tickets-697676829177?aff=oddtdtcreator" target="_blank">
-          Get Training Initiative Tickets
+          Buy In-person Tickets
         </Button>
         <Button href="/beyond" invert={true}>
           Learn More
