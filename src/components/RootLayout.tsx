@@ -79,7 +79,7 @@ function Header({
           <Button href="/beyond" invert={true} className="hidden lg:block">
             BEYOND 2024
           </Button>
-          <Button className='mr-2' href="https://brushfire.com/equipandengage/beyondsydney/576447/details" target="_blank">
+          <Button className='mr-2 text-xs md:text-sm' href="https://brushfire.com/equipandengage/beyondsydney/576447/details" target="_blank">
           Live Stream Access
         </Button>
           <button
