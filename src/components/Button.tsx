@@ -16,7 +16,7 @@ export function Button({
 }: ButtonProps) {
   className = clsx(
     className,
-    'inline-flex rounded-full px-4 py-1.5 text-[8px] md:text-sm font-semibold transition',
+    'inline-flex rounded-full px-4 py-1.5 md:text-sm font-semibold transition',
     invert
       ? 'bg-white text-neutral-950 hover:bg-neutral-200'
       : 'bg-red-500 text-white hover:bg-red-800',

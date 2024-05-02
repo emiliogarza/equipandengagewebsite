@@ -7,6 +7,7 @@ import carouselSlide1 from '@/images/homepage-slides/Slide-7.jpg'
 import carouselSlide2 from '@/images/homepage-slides/Slide-8.jpg'
 import carouselSlide3 from '@/images/homepage-slides/Slide-9.jpg'
 import carouselSlide4 from '@/images/homepage-slides/live-recording-image-sm.jpg'
+import carouselSlideLiveStream from '@/images/homepage-slides/live-stream.jpg'
 import Link from 'next/link'
 
 interface CarouselItem {
@@ -20,6 +21,14 @@ interface CarouselItem {
 
 export function MixedCarousel() {
     const content: CarouselItem[] = [
+    {
+        source: carouselSlideLiveStream,
+        description: "BEYOND Live Stream Tickets",
+        link: "https://brushfire.com/equipandengage/beyondsydney/576447/details",
+        duration: 10000,
+        isVideo: false,
+        target: '_blank'
+    },
     {
         source: carouselSlide4,
         description: "BEYOND Tickets",
