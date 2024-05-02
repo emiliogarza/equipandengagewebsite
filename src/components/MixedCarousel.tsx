@@ -7,7 +7,7 @@ import carouselSlide1 from '@/images/homepage-slides/Slide-7.jpg'
 import carouselSlide2 from '@/images/homepage-slides/Slide-8.jpg'
 import carouselSlide3 from '@/images/homepage-slides/Slide-9.jpg'
 import carouselSlide4 from '@/images/homepage-slides/live-recording-image-sm.jpg'
-import carouselSlideLiveStream from '@/images/homepage-slides/live-stream.jpg'
+import carouselSlideLiveStream from '@/images/homepage-slides/live-stream-grain.jpg'
 import Link from 'next/link'
 
 interface CarouselItem {
@@ -45,13 +45,6 @@ export function MixedCarousel() {
         isVideo: false
     },
     {
-        source: "zuzZ_RSOb2E",
-        description: "BEYOND Initiative 2024",
-        link: "",
-        duration: 130000,
-        isVideo: true
-    },
-    {
         source: carouselSlide1,
         description: "Equip and Engage Ministries",
         link: "/about",
@@ -64,13 +57,6 @@ export function MixedCarousel() {
         link: "/partner",
         duration: 5000,
         isVideo: false
-    },
-    {
-        source: "Ol1Lurn5BKg",
-        description: "BEYOND Initiative 2024",
-        link: "",
-        duration: 220000,
-        isVideo: true
     }]
     const [currentIndex, setCurrentIndex] = useState(0)
     const [duration, setDuration] = useState(0)
